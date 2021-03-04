@@ -1,0 +1,142 @@
+:root {
+  --color-fondo1: #D95B43;
+  --color-fondo2: #53777A;
+  --color-fondo3: rgb(146, 31, 31);
+  --color-fondo4: #ECD078;
+  --color-fondo5: #542437;
+  --color-fondo-logo: #ccc;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.main-header {
+  position: relative;
+  margin: 20px auto;
+  width: 1000px;
+  height: 120px;
+  background-color: var(--color-fondo2);
+}
+
+#logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px;
+  height: 60px;
+  background: var(--color-fondo-logo);
+}
+
+.redes__icono1,
+.redes__icono2,
+.redes__icono3 {
+  top: 42px;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 100%;
+}
+
+.redes__icono1 {
+  right: 120px;
+}
+.redes__icono2 {
+  right: 69px;
+}
+.redes__icono3 {
+  right: 19px;
+}
+
+.navbar {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 48px;
+  background-color: var(--color-fondo4);
+}
+
+.navbar__botones {
+  float: left;
+  width: 196px;
+  height: 48px;
+  background: var(--color-fondo1);
+  margin: 0px 2px;
+  text-align: center;
+}
+
+.navbar__botones p {
+  color: white;
+  margin: 12px;
+}
+
+.div-top {
+  position: relative;
+  margin: 20px auto;
+  width: 1000px;
+  height: 192px;
+}
+
+.div-top ul {
+  width: 1010px;
+  height: 192px;
+  /*background: rgba(255, 0, 0, .5);*/
+}
+/*En este caso seguimos la ruta hasta la caja que queremos modificar*/
+
+.div-top ul li {
+  float: left;
+  width: 326px;
+  height: 192px;
+  background: var(--color-fondo5);
+  margin-right: 10px;
+}
+
+.section {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 453px;
+  background-color: var(--color-fondo4);
+}
+/*En este caso llamamos a la parte izquierda de la caja aside, si
+ponemos el nombre
+aside #izq estamos haciendo referencia a la ruta de otra caja
+si usamos aside#izq nos estamos refiriendo a la misma caja*/
+.section-aside__izq {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 453px;
+  background: var(--color-fondo1);
+}
+
+.section-article {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 600px;
+  height: 453px;
+  background: var(--color-fondo5);
+}
+
+.section-aside__der {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 453px;
+  background: var(--color-fondo1);
+}
+
+.footer {
+  position: relative;
+  margin: 20px auto;
+  width: 1000px;
+  height: 70px;
+  background-color: var(--color-fondo3);
+}
